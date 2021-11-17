@@ -1,6 +1,6 @@
 # terraform
-Archive for terraform related stuff, differentcloud providers has different subfolders.
+Archive for terraform related stuff, different cloud providers has different subfolders.
 
-Using the command git clone https://github.com/easec/terraform at your home folder, to clone these archive.
+Use these command: git clone https://github.com/easec/terraform at your home folder, to clone the archive.
 
 After cloning, use these command: sudo chmod +x for the different scripts.
