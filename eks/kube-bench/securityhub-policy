@@ -1,0 +1,12 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "securityhub:BatchImportFindings",
+            "Resource": [
+                "arn:aws:securityhub:eu-west-1::product/aqua-security/kube-bench"
+            ]
+        }
+    ]
+}
