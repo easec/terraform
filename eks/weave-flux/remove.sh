@@ -1,3 +1,4 @@
+#!/bin/bash
 aws iam delete-role-policy --role-name easec-CodePipelineServiceRole --policy-name codepipeline-access 
 aws iam delete-role --role-name eksworkshop-CodePipelineServiceRole
 aws iam delete-role-policy --role-name eksworkshop-CodeBuildServiceRole --policy-name codebuild-access 
