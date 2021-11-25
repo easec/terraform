@@ -1,6 +1,7 @@
 #!/bin/bash
 cd ~
-mkdir environment && cd environment
+mkdir environment
+cd environment
 
 ACCOUNT_ID=$(aws sts get-caller-identity | jq -r '.Account')
 aws s3 mb s3://easec-${ACCOUNT_ID}-codepipeline-artifacts
