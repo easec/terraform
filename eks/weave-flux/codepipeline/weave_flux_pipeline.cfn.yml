@@ -203,7 +203,7 @@ Resources:
       RoleArn: !Sub arn:aws:iam::${AWS::AccountId}:role/easec-CodePipelineServiceRole
       ArtifactStore:
         Type: S3
-        Location: !Sub eksworkshop-${AWS::AccountId}-codepipeline-artifacts
+        Location: !Sub easec-${AWS::AccountId}-codepipeline-artifacts
       Stages:
         - Name: Source
           Actions:
