@@ -1,4 +1,6 @@
 #!/bin/bash
+aws iam create-group --group-name k8sAdmin
+
 ADMIN_GROUP_POLICY=$(echo -n '{
   "Version": "2012-10-17",
   "Statement": [
@@ -18,6 +20,7 @@ aws iam put-group-policy \
 --policy-document "$ADMIN_GROUP_POLICY"
 
 aws iam create-group --group-name k8sDev
+
 DEV_GROUP_POLICY=$(echo -n '{
   "Version": "2012-10-17",
   "Statement": [
@@ -37,6 +40,7 @@ aws iam put-group-policy \
 --policy-document "$DEV_GROUP_POLICY"
 
 aws iam create-group --group-name k8sInteg
+
 INTEG_GROUP_POLICY=$(echo -n '{
   "Version": "2012-10-17",
   "Statement": [
