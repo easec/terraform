@@ -1,3 +1,4 @@
+#!/bin/bash
 aws iam create-group --group-name k8sDev
 DEV_GROUP_POLICY=$(echo -n '{
   "Version": "2012-10-17",
