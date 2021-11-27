@@ -1,4 +1,6 @@
 #!/bin/bash
+export ACCOUNT_ID=$(aws sts get-caller-identity --output text --query Account)
+
 POLICY=$(echo -n '{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":"arn:aws:iam::'; echo -n "$ACCOUNT_ID"; echo -n ':root"},"Action":"sts:AssumeRole","Condition":{}}]}')
 
 echo ACCOUNT_ID=$ACCOUNT_ID
