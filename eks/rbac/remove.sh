@@ -1,6 +1,6 @@
 #!/bin/bash
 # unset KUBECONFIG
-export ACCOUNT_ID=$(aws sts get-caller-identity --output text --query Account)
+# export ACCOUNT_ID=$(aws sts get-caller-identity --output text --query Account)
 
 kubectl delete namespace development integration
 kubectl delete pod nginx-admin
@@ -38,4 +38,4 @@ rm /tmp/kubeconfig*
 
 # reset aws credentials and config files
 rm  ~/.aws/{config,credentials}
-aws configure set default.region ${AWS_REGION}
+# aws configure set default.region ${AWS_REGION}
